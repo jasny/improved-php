@@ -1,0 +1,25 @@
+{
+    "name": "improved/improved",
+    "description": "Improved PHP library",
+    "license": "MIT",
+    "type": "metapackage",
+    "authors": [
+        {
+            "name": "Arnold Daniels",
+            "email": "arnold@jasny.net",
+            "homepage": "http://www.jasny.net"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/improved-php-library/improved/issues",
+        "source": "https://github.com/improved-php-library/improved"
+    },
+    "require": {
+        "php": ">=7.1.0",
+        "improved/iterable": "dev-master",
+        "improved/function": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
