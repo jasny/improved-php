@@ -8,19 +8,12 @@ The core libraries of PHP are a mess. Functions have inconsistent names, inconsi
 sometimes dangerouds return values and deal with errors poorly. This functions have been created decades ago and no
 longer live up to current day standards.
 
-While there are many functions, a lot are redundant, while others are missing.
-
-For trimming a string there is `trim`, `rtrim` and `ltrim`. For padding a string there is only `str_pad`, which takes
+While there are many functions, a lot are redundant, while others are missing. For example;
+* For trimming a string there is `trim`, `rtrim` and `ltrim`. For padding a string there is only `str_pad`, which takes
 a `STR_PAD_RIGHT`, `STR_PAD_LEFT` or `STR_PAD_BOTH` as argument.
-
-For missing functions there are standard patterns to make it work. For instance, to find out if a string contains a
-specific substring we use
-
-```php
-if (strpos($string, $substring) !== false) {
-   //...
-}
-```
+* For missing functions there are standard patterns to make it work. For instance, to find out if a string contains a
+specific substring we use `strpos($string, $substring) !== false`.
+* etc
 
 But these patterns make it unnecessarily difficult for non-PHP developers to read PHP code and creates a barrier for
 newcomers to an otherwise beginner-friendly language.
