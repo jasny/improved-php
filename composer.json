@@ -11,13 +11,13 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/improved-php-library/improved/issues",
         "source": "https://github.com/improved-php-library/improved"
     },
     "require": {
         "php": ">=7.1.0",
-        "improved/iterable": "dev-master",
-        "improved/function": "dev-master"
+        "improved/iterable": "~1.0",
+        "improved/function": "~1.0",
+        "improved/type": "~1.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

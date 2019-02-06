@@ -9,14 +9,15 @@ sometimes dangerouds return values and deal with errors poorly. This functions h
 longer live up to current day standards.
 
 While there are many functions, a lot are redundant, while others are missing. For example;
+* There are many array functions, but these won't work with other iterables like `ArrayObject`.
 * For trimming a string there is `trim`, `rtrim` and `ltrim`. For padding a string there is only `str_pad`, which takes
 a `STR_PAD_RIGHT`, `STR_PAD_LEFT` or `STR_PAD_BOTH` as argument.
 * For missing functions there are standard patterns to make it work. For instance, to find out if a string contains a
 specific substring we use `strpos($string, $substring) !== false`.
 * etc
 
-But these patterns make it unnecessarily difficult for non-PHP developers to read PHP code and creates a barrier for
-newcomers to an otherwise beginner-friendly language.
+This make it unnecessarily difficult for non-PHP developers to read PHP code and creates a barrier for newcomers to an
+otherwise beginner-friendly language.
 
 ## What?
 
@@ -30,6 +31,15 @@ The library contains of the following packages:
 * [iterable](https://github.com/improved-php-library/iterable) - Like array functions, for any iterable. Uses
     Generators.
 * [functions](https://github.com/improved-php-library/functions) - Function handling and functional programming.
+* [type](https://github.com/improved-php-library/type) - Type checking and casting.
+
+### Roadmap
+
+* [string](https://github.com/improved-php-library/string) - String manipulation.
+* array - Limited set of functions that don't make sense for other iterables.
+
+For more high level functionality like database access, filesystem access, image processing, etc, it's recommended to
+use an OOP abstraction layer. This is outside of the scope of the improved PHP library.
 
 ## How?
 
@@ -44,7 +54,7 @@ namespace to `i`.
 ```php
 use Improved as `i`;
 
-if (i\string_contains($string, $substring) {
+if (i\type_is($value, '?string') {
     //...
 }
 ```
