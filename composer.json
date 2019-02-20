@@ -14,7 +14,7 @@
         "source": "https://github.com/improved-php-library/improved"
     },
     "require": {
-        "php": ">=7.1.0",
+        "php": ">=7.2.0",
         "improved/iterable": "~1.0",
         "improved/function": "~1.0",
         "improved/type": "~1.0"
