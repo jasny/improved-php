@@ -1,6 +1,11 @@
 ![improved PHP library](https://user-images.githubusercontent.com/100821/46372249-e5eb7500-c68a-11e8-801a-2ee57da3e5e3.png)
 
-Consistent, modern and safe to use functions for PHP.
+Playground for developing consistent and modern functions for PHP that are safe to use.
+
+Most libraries here are in permanent beta, though some might become production ready. Any library written in PHP can be used,
+but is mostly intended as proof of concept.
+
+If you choose to use these libraries, please provide feedback either through via github issues or via Twitter [@ArnoldDaniels](https://twitter.com/ArnoldDaniels).
 
 ## Why?
 
@@ -58,4 +63,3 @@ if (i\type_is($value, '?string') {
     //...
 }
 ```
-
